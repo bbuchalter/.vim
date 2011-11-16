@@ -5,3 +5,4 @@ SETUP
 git submodule init
 git submodule update
 ln -s vimrc ~/.vimrc
+make sure ruby support has been compiled using vim --version | grep ruby and see +ruby.  If on ubuntu use apt-get install vim-nox.  
