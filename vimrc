@@ -83,4 +83,5 @@ map <Leader>t :FuzzyFinderTextMate<Enter>
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
-
+let g:bufExplorerDetailedHelp=1
+let g:bufExplorerShowRelativePath=1
