@@ -5,4 +5,11 @@ SETUP
 git submodule init
 git submodule update
 ln -s vimrc ~/.vimrc
-make sure ruby support has been compiled using vim --version | grep ruby and see +ruby.  If on ubuntu use apt-get install vim-nox.  
+mkdir src
+cd src
+wget ftp://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2
+tar xf vim-7.3.tar.bz2
+cd vim73
+./configure --prefix=$HOME --enable-rubyinterp  (may need yum install ncurses-devel)
+make
+make install
