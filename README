@@ -2,6 +2,7 @@ Brian Buchalter's VIM config
 
 SETUP
 ============
+yum install ncurses-devel ctags
 git submodule init
 git submodule update
 ln -s vimrc ~/.vimrc
@@ -10,6 +11,6 @@ cd src
 wget ftp://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2
 tar xf vim-7.3.tar.bz2
 cd vim73
-./configure --prefix=$HOME --enable-rubyinterp  (may need yum install ncurses-devel)
+./configure --prefix=$HOME --enable-rubyinterp
 make
 make install
